@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lecturer-microservice" />
+        <module name="library-domain" />
+        <module name="student-microservice" />
+        <module name="book-microservice" />
+        <module name="borrow-microservice" />
+        <module name="officer-microservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="book-domain" target="17" />
+      <module name="borrow-domain" target="17" />
+      <module name="lecturer-domain" target="17" />
+      <module name="library-microservice" target="17" />
+      <module name="login-domain" target="17" />
+      <module name="officer-domain" target="17" />
+      <module name="student-domain" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="book-microservice" options="-parameters" />
+      <module name="borrow-microservice" options="-parameters" />
+      <module name="lecturer-microservice" options="-parameters" />
+      <module name="officer-microservice" options="-parameters" />
+      <module name="student-microservice" options="-parameters" />
+    </option>
+  </component>
+</project>
